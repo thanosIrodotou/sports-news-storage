@@ -1,0 +1,17 @@
+version: '3.3'
+services:
+  api:
+    build: .
+    ports:
+      - '8082:8080'
+    volumes:
+      - .:/api
+    depends_on:
+      - 'mongo'
+  mongo:
+    image: 'mongo:latest'
+    container_name: 'mongo'
+    ports:
+      - '27100:27017'
+    volumes:
+      - ./data/dev/mongo:/data/db

@@ -1,0 +1,6 @@
+server:
+  port: 8080
+
+api:
+  getLatestNewsArticlesUrl: "https://www.brentfordfc.com/api/incrowd/getnewlistinformation?count=%d"
+  getArticleDetailsUrl: "https://www.brentfordfc.com/api/incrowd/getnewsarticleinformation?id=%d"
